@@ -22,6 +22,7 @@ nav {
   a:hover {
     color: rgb(195, 247, 38);
   }
+  z-index: 1;
 }
 
 button {
@@ -54,9 +55,6 @@ a {
   padding-left: 3vw;
   width: 30vw;
   height: 5vw;
-  h2, p {
-    padding-left: -3vw;
-  }
   ul {
     display: grid;
     grid-template-columns: repeat(3, minmax(1rem, 20rem));
@@ -67,17 +65,30 @@ a {
 }
 
 .title {
-  padding-top: 20vw;
+  padding-top: 29vw;
 }
+
 
 
 .projects {
   background-color: rgb(30, 12, 46);
+  color: rgb(170,91,244);
+  h2 {
+    text-align: center;
+    padding-top: 1rem;
+  }
   h3 {
     text-align: center;
     margin: 2rem;
     font-size: 2rem;
     padding-left: 3vw;
+  }
+  h4 {
+    font-size: 1.65rem;
+  }
+  h5 {
+    text-align: center;
+    padding-bottom: 2rem;
   }
   div {
     display: flex;
@@ -85,19 +96,31 @@ a {
   img {
     opacity: 0.7;
     width: 45vw;
+    height:fit-content;
     border-radius: 15px;
     box-shadow: inset;
+    margin: auto;
   }
   img:hover {
     opacity: 1;
   }
   p {
-    width: 50vw;
-    padding-left: 3vw;
+    font-size: 1.5rem;
   }
+
   h2 {
     font-size: 3rem;
     margin: 0;
-    padding-left: 3vw;
   }
+  .text {
+    display: block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    width: 44vw;
+  }
+}
+
+.single-proj{
+  height: 62vh;
+  padding-bottom: 4rem
 }
