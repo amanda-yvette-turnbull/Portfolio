@@ -2,17 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./client/styles/index.css"/>
-  <!-- * Font Links -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-  <title>My Recipes</title>
+  <link rel="stylesheet" href="./main.scss">
+  <title>Portfolio</title>
 </head>
 <body>
-  <section id="app" class="app-container"></section>
-  <script src="./client/index.tsx" type="module"></script>
+  <nav>
+    <div class="socials-nav">
+      <!--* replace with logos  -->
+      <a href="">github</a>
+      <a href="">linkedin</a>
+      <a href="">email</a>
+    </div>
+    <div class="page-nav">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Projects</a>
+    </div>
+  </nav>
+  <main>
+    <section class="home">
+      <header>
+        <h1 class="title" >Amanda Turnbull</h1>
+        <h1>Software Developer</h1>
+        <p class="bio">I love solving things, whether that is building a shelf from ikea, or debugging code.</p>
+      </header>
+      <div class="about">
+        <h2 class="title" >About me</h2>
+        <p>
+          I am a software developer who loves understanding, staring at, and solving probelms. I have an undying curisoisty for any issue complecx enough to make me stare at it for a while. Understanding the how to solve a problem, but also why it happened and how to prevern it is how I work best.
+        </p>
+        <p>
+          I recently graduated from Dev Academy, a 15-week full-stack web development bootcamp. Some of my skils include: 
+        </p>
+        <ul>
+          <li>Typescript</li>
+          <li>React.js</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Node.js</li>
+          <li>Redux</li>
+          <li>SQLite3</li>
+          <li>Superagent</li>
+          <li>Supertest</li>
+          <li>Jest</li>
+          <li>Knex</li>
+        </ul>
+        <button><a href="">See my cv</a></button>
+      </div>
+    </section>
+    <section class="projects">
+      <h2>My Projects</h2>
+      <p>*these are not currently deployed*</p>
+      <h3>Star Crossed - Group Project</h3>
+      <div>
+        <!--? make a cool swipey thing like a gallery would be fun  -->
+        <p> description of project</p>
+        <img src="./images/sample-photo.png" alt="">
+      </div>
+      <h3>Shoppinglist - Personal Project</h3>
+      <div>
+        <!--? make a cool swipey thing like a gallery would be fun  -->
+        <p> description of project</p>
+        <img src="./images/sample-photo.png" alt="">
+      </div>
+      <h3>Random Fact generator - Personal Project</h3>
+      <div>
+        <!--? make a cool swipey thing like a gallery would be fun  -->
+        <p> description of project</p>
+        <img src="./images/sample-photo.png" alt="">
+      </div>
+      <h3>Metlame Bus Shame - Group Project</h3>
+      <div>
+        <!--? make a cool swipey thing like a gallery would be fun  -->
+        <p>This was a project created for one of our Friday projects at Dev Adademy. The focus of this project was to </p>
+        <img src="./images/sample-photo.png" alt="">
+      </div>
+    </section>
+  </main>
 </body>
 </html>
