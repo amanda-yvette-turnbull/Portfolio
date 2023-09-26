@@ -10,13 +10,11 @@
   "scripts": {
     "build": "run-s build:client build:server",
     "build:client": "vite build",
-    "build:server": "tsc -p server/tsconfig.json",
+    "build:server": "tsc -p tsconfig.json",
     "start": "node server/index.ts",
     "test": "vitest",
     "dev": "run-p dev:client dev:server",
     "dev:client": "vite",
-    "dev:server": "nodemon server/index.ts",
-    "knex": "knex --knexfile ./server/db/knexfile.js",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "keywords": [
@@ -69,6 +67,7 @@
     "@redux-devtools/extension": "^3.2.3",
     "express": "^4.17.2",
     "knex": "^2.3.0",
+    "simple-update-notifier": "^2.0.0",
     "sqlite3": "^5.1.2",
     "superagent": "7.1.1",
     "ts-node": "^10.9.1"
